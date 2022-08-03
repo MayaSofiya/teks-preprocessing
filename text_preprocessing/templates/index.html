@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Preprocessing</title>
+    <style>
+        /* body {background-image: url("/../homepage.png");} */
+        /* body {background-color: rgb(0, 221, 255);} */
+        /* body {background-image: url('dataminig.jpg');} */
+        body {
+        background-image: url(https://www.explore-group.com/storage/images-processed/w-1500_h-auto_m-fit_s-any__highres_483051862.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        }
+        body {font-family: sans-serif};
+        </style>
+</head>
+<body>
+<h1 align="center">Text Preprocessing</h1>
+<form action="/preprocess" method="post">
+    <h3 align="center">Enter Text here:</h3>
+    <p align="center"><textarea id="text" name="text" rows="15" cols="100" style="border-radius:10px;">
+    </textarea></p>
+    <p align="center">
+            <input type="checkbox" id="lowercase" name="lowercase" value="lowercase">
+            <label for="lowercase"> Lowercase</label>
+            <input type="checkbox" id="punct" name="punct" value="punct">
+            <label for="punct"> Remove Punctuation</label>
+            <input type="checkbox" id="stp" name="stp" value="stp">
+            <label for="stp"> Remove Stopwords</label><br><br>
+            <input type="radio" id="stem" name="stem" value="stem">
+            <label for="stem"> Stem</label>
+            <input type="radio" id="lem" name="stem" value="lem">
+            <label for="lem"> Lemmatize</label>
+            <input type="radio" id="none" name="stem" value="none">
+            <label for="none"> None</label><br><br>
+        <input type="submit" value="Process" style="border-radius:10px; background-color: rgb(28, 43, 206); color:rgb(249, 249, 249)" >
+    </p>
+<h5 align="center" style="margin-top: 120px">Responsi Pemrosesan Bahasa Alami UAD 2022</h5>
+<h5 align="center" style="margin-top: 10px">Maya Sofiya Intantri (1900018298)</h5>
+</form>
+</body>
+</html>
